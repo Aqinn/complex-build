@@ -1,0 +1,2 @@
+com/aqinn/demo/complexbuild/mb/BuildConfig.java
+ com.aqinn.demo.complexbuild.mb.BuildConfig

@@ -1,0 +1,5 @@
+com.aqinn.demo.complexbuild.lb
+id tv_main
+layout activity_test
+string string_lb
+string string_lb_use_app_define

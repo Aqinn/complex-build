@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">complex-build</string>
+    <string name="string_lib_lb_use_define_in_app">string_lib_lb_use_define_in_app</string>
+</resources>

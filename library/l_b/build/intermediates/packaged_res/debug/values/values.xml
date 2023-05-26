@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="string_lb">string_lb</string>
+    <string name="string_lb_use_app_define">@string/string_lib_lb_use_define_in_app</string>
+</resources>
