@@ -1,2 +1,0 @@
-com/aqinn/demo/complexbuild/ldelegate/BuildConfig.java
- com.aqinn.demo.complexbuild.ldelegate.BuildConfig

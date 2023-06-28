@@ -1,4 +1,0 @@
-int id tv_main 0x0
-int layout activity_test 0x0
-int string string_lb 0x0
-int string string_lb_use_app_define 0x0

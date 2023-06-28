@@ -1,6 +1,0 @@
-R_DEF: Internal format may change without notice
-local
-id tv_main
-layout activity_test
-string string_lb
-string string_lb_use_app_define
