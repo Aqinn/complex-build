@@ -2,8 +2,23 @@ plugins {
     `kotlin-dsl`
 }
 
+gradlePlugin {
+    plugins.register("testktpluginname") {
+        id = "com.aqinn.demo.agp.plugin.testktplugin"
+        implementationClass = "com.aqinn.demo.agp.plugin.TestKtPlugin"
+    }
+}
+
 repositories {
     mavenCentral()
+    google()
+//    gradlePluginPortal()
+}
+
+dependencies {
+    implementation(gradleApi())
+    implementation(kotlin("stdlib-jdk8"))
+    implementation("com.android.tools.build:gradle:7.2.2")
 }
 
 //gradle.addProjectEvaluationListener(object : ProjectEvaluationListener {

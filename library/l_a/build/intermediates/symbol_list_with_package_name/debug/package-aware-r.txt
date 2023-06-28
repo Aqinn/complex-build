@@ -1,1 +1,1 @@
-com.aqinn.demo.complexbuild.la
+com.aqinn.demo.complexbuild.ldelegate

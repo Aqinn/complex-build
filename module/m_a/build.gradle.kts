@@ -17,4 +17,5 @@ android {
 
 dependencies {
     implementation(project(":module:m_b"))
+    compileOnly(project(":library:l_delegate"))
 }

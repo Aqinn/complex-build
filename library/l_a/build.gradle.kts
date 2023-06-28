@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.aqinn.demo.complexbuild.la"
+    namespace = "com.aqinn.demo.complexbuild.ldelegate"
     compileSdk = 33
     buildToolsVersion = "30.0.3"
 
@@ -16,6 +16,5 @@ android {
 }
 
 dependencies {
-    implementation(project(":library:l_b"))
 }
 

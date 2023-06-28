@@ -1,2 +1,2 @@
-com/aqinn/demo/complexbuild/la/BuildConfig.java
- com.aqinn.demo.complexbuild.la.BuildConfig
+com/aqinn/demo/complexbuild/ldelegate/BuildConfig.java
+ com.aqinn.demo.complexbuild.ldelegate.BuildConfig

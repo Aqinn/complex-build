@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+//    id("test-script-plugin")
+    id("com.aqinn.demo.agp.plugin.testktplugin")
 }
 
 android {
@@ -57,5 +59,13 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
 
     implementation(project(":module:m_a"))
-//    implementation(project(":library:l_b"))
+}
+
+testKt {
+    arg1 = 111
+    arg1 = 222
+    arg2 = 333F
+    arg3 = "test string"
+    arg4 = intArrayOf(1, 2, 3, 4, 5)
+    arg5 = listOf("123", "456", "789", "0")
 }
