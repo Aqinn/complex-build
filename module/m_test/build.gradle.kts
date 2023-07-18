@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.aqinn.demo.complexbuild.lb"
+    namespace = "com.aqinn.demo.complexbuild.mtest"
     compileSdk = 33
     buildToolsVersion = "30.0.3"
 
@@ -13,16 +13,8 @@ android {
         targetSdk = 33
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
-    sourceSets {
-        getByName("main") {
-            java {
-                srcDir("src/main/kotlin")
-                srcDir("src/main/java")
-            }
-        }
-    }
 }
+
 dependencies {
     implementation(project(":library:l_ui_base"))
 }

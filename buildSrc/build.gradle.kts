@@ -16,9 +16,9 @@ repositories {
 }
 
 dependencies {
-    implementation(gradleApi())
-    implementation(kotlin("stdlib-jdk8"))
-    implementation("com.android.tools.build:gradle:7.2.2")
+//    implementation(gradleApi())
+//    implementation(kotlin("stdlib-jdk8"))
+    implementation("com.android.tools.build:gradle:4.2.2")
 }
 
 //gradle.addProjectEvaluationListener(object : ProjectEvaluationListener {

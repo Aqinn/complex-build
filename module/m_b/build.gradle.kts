@@ -16,5 +16,6 @@ android {
 }
 
 dependencies {
+    implementation(project(":library:l_ui_base"))
     implementation(project(":library:l_a"))
 }

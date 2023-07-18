@@ -1,7 +1,7 @@
 import java.util.Properties
 
 plugins {
-    id("com.aqinn.demo.agp.plugin.testktplugin")
+//    id("com.aqinn.demo.agp.plugin.testktplugin")
 }
 
 val propFile = File(project.rootProject.rootDir, "local.properties")

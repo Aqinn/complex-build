@@ -2,7 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
 //    id("test-script-plugin")
-    id("com.aqinn.demo.agp.plugin.testktplugin")
+//    id("com.aqinn.demo.agp.plugin.testktplugin")
 }
 
 android {
@@ -29,10 +29,10 @@ android {
             setProguardFiles(listOf(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"))
         }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
+//    compileOptions {
+//        sourceCompatibility = JavaVersion.VERSION_1_8
+//        targetCompatibility = JavaVersion.VERSION_1_8
+//    }
 //    kotlinOptions {
 //        jvmTarget = "1.8"
 //    }
@@ -50,22 +50,21 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.10.1")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
-    implementation("androidx.appcompat:appcompat:1.6.1")
     androidTestImplementation("junit:junit:4.12")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.0")
     androidTestImplementation("androidx.test:runner:1.5.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.4")
 
+    implementation(project(":library:l_ui_base"))
     implementation(project(":module:m_a"))
+    implementation(project(":module:m_test"))
 }
 
-testKt {
-    arg1 = 111
-    arg1 = 222
-    arg2 = 333F
-    arg3 = "test string"
-    arg4 = intArrayOf(1, 2, 3, 4, 5)
-    arg5 = listOf("123", "456", "789", "0")
-}
+//testKt {
+//    arg1 = 111
+//    arg1 = 222
+//    arg2 = 333F
+//    arg3 = "test string"
+//    arg4 = intArrayOf(1, 2, 3, 4, 5)
+//    arg5 = listOf("123", "456", "789", "0")
+//}
