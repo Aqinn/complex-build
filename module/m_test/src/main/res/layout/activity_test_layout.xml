@@ -10,6 +10,12 @@
         android:text="Test"
         android:textSize="50sp" />
 
+    <com.aqinn.demo.complexbuild.mtest.TestView
+        android:id="@+id/test_view"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/include_test" />
     <include layout="@layout/include_test" />
 
     <include layout="@layout/merge_test" />
