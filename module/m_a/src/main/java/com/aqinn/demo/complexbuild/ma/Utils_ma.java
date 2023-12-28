@@ -1,6 +1,7 @@
 package com.aqinn.demo.complexbuild.ma;
 
 import com.aqinn.demo.complexbuild.delegate.ConvUtils;
+import com.aqinn.demo.complexbuild.mb.Utils_mb;
 
 /**
  * Created by AllanZhong on 2023/6/2.
@@ -9,6 +10,10 @@ public class Utils_ma {
 
     public static String test_ma() {
         return ConvUtils.test(1, 10) + ", " + ConvUtils.test1(1);
+    }
+
+    public static String test_一直调其它module() {
+        return "a, " + Utils_mb.test_一直调其它module();
     }
 
 }

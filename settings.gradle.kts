@@ -19,6 +19,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        mavenLocal {
+            url = uri("$rootDir/maven_for_allan")
+        }
     }
 }
 rootProject.name = "complex-build"

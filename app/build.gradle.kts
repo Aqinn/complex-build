@@ -49,6 +49,10 @@ android {
     }
 }
 
+//configurations.implementation.configure {
+//    isCanBeResolved = true
+//}
+
 dependencies {
     implementation("androidx.core:core-ktx:1.10.1")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
@@ -59,6 +63,12 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.4")
 
     implementation(project(":module:m_a"))
+//    {
+//        exclude("com.aqinn", "l_b")
+//    }
+//    implementation("com.aqinn:l_b:20231225214756-4ac670d0-SNAPSHOT")  // version 0
+    implementation("com.aqinn:l_b:20231225215157-4ac670d0-SNAPSHOT")  // version 1
+//    implementation(project(mapOf("path" to ":library:l_b")))
 }
 
 testKt {

@@ -5,16 +5,24 @@ plugins {
     id("org.jetbrains.kotlin.android") version "1.8.0" apply false
 }
 
-//gradle.projectsEvaluated {
-//    println("输出所有项目start")
-//    allprojects {
+gradle.projectsEvaluated {
+    println("输出所有项目start")
+    allprojects {
 //        if (subprojects.isEmpty()) {
 //            println(name)
-////            println(displayName)
-////            println(path)
-////            println(version)
+//            println(displayName)
+//            println(path)
+//            println(version)
 //            println(buildFile.absolutePath)
 //        }
-//    }
-//    println("输出所有项目end")
-//}
+
+        configurations.all {
+            isCanBeResolved = true
+
+            resolutionStrategy {
+                preferProjectModules()
+            }
+        }
+    }
+    println("输出所有项目end")
+}
