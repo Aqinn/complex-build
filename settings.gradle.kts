@@ -26,8 +26,8 @@ dependencyResolutionManagement {
 }
 rootProject.name = "complex-build"
 include(":app")
-include(":module:m_a")
 include(":module:m_b")
 include(":library:l_a")
+include(":module:m_a")
 include(":library:l_b")
 include(":library:l_delegate")

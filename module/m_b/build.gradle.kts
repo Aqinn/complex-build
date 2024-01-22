@@ -16,5 +16,5 @@ android {
 }
 
 dependencies {
-    implementation(project(":library:l_a"))
+//    implementation(project(":library:l_a"))
 }

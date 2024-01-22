@@ -62,12 +62,15 @@ dependencies {
     androidTestImplementation("androidx.test:runner:1.5.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.4")
 
+    implementation(project(":module:m_b"))
+    implementation(project(":library:l_a"))
     implementation(project(":module:m_a"))
+    implementation(project(":library:l_b"))
 //    {
 //        exclude("com.aqinn", "l_b")
 //    }
 //    implementation("com.aqinn:l_b:20231225214756-4ac670d0-SNAPSHOT")  // version 0
-    implementation("com.aqinn:l_b:20231225215157-4ac670d0-SNAPSHOT")  // version 1
+//    implementation("com.aqinn:l_b:20231225215157-4ac670d0-SNAPSHOT")  // version 1
 //    implementation(project(mapOf("path" to ":library:l_b")))
 }
 
